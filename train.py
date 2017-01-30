@@ -24,7 +24,7 @@ def train(args):
     epochs = args.epochs
     gpu = args.gpu
 
-    # CIFAR-10 images in range [-1, -1] (tanh generator outputs)
+    # CIFAR-10 images in range [-1, 1] (tanh generator outputs)
     train, _ = datasets.get_cifar10(withlabel=False, ndim=3, scale=2)
     train -= 1.0
     train_iter = iterators.SerialIterator(train, batch_size)
