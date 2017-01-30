@@ -4,7 +4,6 @@ from chainer import training, reporter, cuda
 from chainer import Variable
 
 
-
 class WassersteinGANUpdater(training.StandardUpdater):
     def __init__(self, *, iterator, noise_iterator, optimizer_generator,
                  optimizer_critic, device=-1):
