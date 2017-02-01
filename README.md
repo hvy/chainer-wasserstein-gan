@@ -6,7 +6,7 @@ Chainer implementation of the Wesserstein GAN by Martin Arjovsky et al. Note tha
 
 Train the models with CIFAR-10. Randomly sampled images will be saved under a subdirectory called `result` automatically created when training.
 
-```python
+```bash
 python train.py --batch-size 64 --epochs 100 --gpu 1
 ```
 
